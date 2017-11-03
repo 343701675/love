@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Our Love Story</title>
+
+<style type="text/css">
+@font-face {
+	font-family: digit;
+	src: url('digital-7_mono.ttf') format("truetype");
+}
+</style>
+
+<link href="css/default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/garden.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+
+<link rel="stylesheet" href="css/index-pc.css" />
+<script>window.g_config = window.g_config || {}; window.g_config.loadedCss = window.g_config.loadedCss || []; window.g_config.loadedCss = ["css/index-pc.css"];</script>
+</head>
+
+<body>
+<div id="mainDiv">
+	<div style="width: 1210px; height: 200px;line-height:200px; margin:auto;text-align:center;font-size:30px;
+		font-weight:bolder">
+		<a href="/blog">进入博客</a>
+	</div>
+	<div id="content">
+		<div id="code">
+			<span class="comments">/**</span><br />
+			<span class="space"/><span class="comments">*2015-12-31,</span><br />
+			<span class="space"/><span class="comments">*<span id="now">2016-12-09</span>.</span><br />
+			<span class="space"/><span class="comments">*/</span><br />
+			Boy name = <span class="keyword">Mr</span> HY<br />
+			Girl name = <span class="keyword">Mrs</span> HYQ<br />
+			<span class="comments">// Fall in love river. </span><br />
+			The boy love the girl;<br />
+			<span class="comments">// They love each other.</span><br />
+			The girl loved the boy;<br />
+			<span class="comments">// AS time goes on.</span><br />
+			The boy can not be separated the girl;<br />
+			<span class="comments">// At the same time.</span><br />
+			The girl can not be separated the boy;<br />
+			<span class="comments">// Both wind and snow all over the sky.</span><br />
+			<span class="comments">// Whether on foot or 5 kilometers.</span><br />
+			<span class="keyword">The boy</span> very <span class="keyword">happy</span>;<br />
+			<span class="keyword">The girl</span> is also very <span class="keyword">happy</span>;<br />
+			<span class="placeholder"/><span class="comments">// Whether it is right now</span><br />
+			<span class="placeholder"/><span class="comments">// Still in the distant future.</span><br />
+			<span class="placeholder"/>The boy has but one dream;<br />
+			<span class="comments">// The boy wants the girl could well have been happy.</span><br />
+			<br>
+			<br>
+			I want to say:<br />
+			Baby, I love you forever;<br />
+		</div>
+		<div id="loveHeart">
+			<canvas id="garden"></canvas>
+			<div id="words">
+				<div id="messages">
+					亲爱的，这是我们相爱在一起的时光。
+					<div id="elapseClock"></div>
+				</div>
+				<div id="loveu">
+					爱你直到永永远远。<br/>
+					<div class="signature">- 华先生</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="copyright">
+		<a href="#">....</a><br />
+		<a href="#">....</a><br />
+		
+	</div>
+</div>
+<script type="text/javascript">
+	var d=new Date();
+	var now=d.getFullYear()+"-"+(d.getMonth()+1)+"-"+d.getDate();
+	$('#now').text(now);
+</script>
+<script type="text/javascript">
+//670px 625px
+var offsetX = $("#loveHeart").width() / 2;  
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date();
+together.setFullYear(2015, 11, 31); //设置时分秒
+together.setHours(0);
+together.setMinutes(0);
+together.setSeconds(0);
+together.setMilliseconds(0);
+
+if (!document.createElement('canvas').getContext) { //如果没有创建画布对象
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+	document.body.appendChild(msg);
+	$("#code").css("display", "none")
+	$("#copyright").css("position", "absolute");
+	$("#copyright").css("bottom", "10px");
+	document.execCommand("stop");
+} else {  //否则
+	setTimeout(function () {
+		startHeartAnimation();   //5秒后执行心形动画
+	}, 5000);
+
+	timeElapse(together);  //日期设置
+	setInterval(function () {
+		timeElapse(together);
+	}, 500);  //0.5秒一循环timeElapse(together);
+
+	adjustCodePosition();   //左边文字位置
+	$("#code").typewriter();  //文字敲击效果
+}
+</script>
+
+<div id="mallPage" class="mui-global-biz-  mui-global-not-market page-not-market">
+    <div class="mui-zebra-module" id="J_2320562684" data-module-id="2320562684" data-rmc-id="2320562684" data-id="96939" data-name="zebra-particle" data-version="4.0.0" data-cfg-id="undefined" data-spm="2320562684">
+        <div class="zebra-particle" id="zebra-particle" data-mod-name="mui/zebra-particle/index-pc" data-config="{}" data-async-load="true">
+        </div>
+    </div>
+</div>
+<script>window.g_config = window.g_config || {}; window.g_config.seed = window.g_config.seed || { "packages": { "kissy": { "base": "/script/kissy/k/1.4.16/", "version": "1.4.16" }, "mui/babel-polyfill": { "debug": true, "group": "tm", "ignorePackageNameInUri": true, "path": "/script/mui/babel-polyfill/6.2.4/", "version": "6.2.4", "name": "mui/babel-polyfill", "base": "/script/mui/babel-polyfill/6.2.4/" }, "mui/countdown": { "debug": true, "group": "tm", "ignorePackageNameInUri": true, "path": "/script/mui/countdown/4.0.2/", "version": "4.0.2" }, "mui/fetch": { "debug": true, "group": "tm", "ignorePackageNameInUri": true, "path": "/script/mui/fetch/4.1.8/", "version": "4.1.8" }, "mui/jquery": { "debug": true, "group": "tm", "ignorePackageNameInUri": true, "path": "/script/mui/jquery/4.0.1/", "version": "4.0.1" }, "mui/kissy-polyfill": { "debug": true, "group": "tm", "ignorePackageNameInUri": true, "path": "/script/mui/kissy-polyfill/4.0.12/", "version": "4.0.12", "name": "mui/kissy-polyfill", "base": "/script/mui/kissy-polyfill/4.0.12/" }, "mui/xtemplate": { "debug": true, "group": "tm", "ignorePackageNameInUri": true, "path": "/script/mui/xtemplate/4.0.9/", "version": "4.0.9" }, "mui/zebra-act-headbanner4": { "debug": true, "group": "tm", "ignorePackageNameInUri": true, "path": "/script/mui/zebra-act-headbanner4/4.3.4/", "version": "4.3.4", "name": "mui/zebra-act-headbanner4", "base": "/script/mui/zebra-act-headbanner4/4.3.4/" }, "mui/zebra-fans-card": { "debug": true, "group": "tm", "ignorePackageNameInUri": true, "path": "/script/mui/zebra-fans-card/4.0.14/", "version": "4.0.14" }, "mui/zepto": { "debug": true, "group": "tm", "ignorePackageNameInUri": true, "path": "/script/mui/zepto/4.0.7/", "version": "4.0.7" }, "mui/crossimage": { "debug": true, "group": "tm", "ignorePackageNameInUri": true, "path": "/script/mui/crossimage/4.1.6/", "version": "4.1.6" }, "mui/datalazyload": { "debug": true, "ignorePackageNameInUri": true, "path": "/script/mui/datalazyload/4.0.20/", "version": "4.0.20" }, "mui/zebra-act-imgnav4-990x40": { "debug": true, "group": "tm", "ignorePackageNameInUri": true, "path": "/script/mui/zebra-act-imgnav4-990x40/4.1.6/", "version": "4.1.6", "name": "mui/zebra-act-imgnav4-990x40", "base": "/script/mui/zebra-act-imgnav4-990x40/4.1.6/" }, "mui/zebra-macro": { "debug": true, "group": "tm", "ignorePackageNameInUri": true, "path": "/script/mui/zebra-macro/4.2.22/", "version": "4.2.22", "name": "mui/zebra-macro", "base": "/script/mui/zebra-macro/4.2.22/" }, "mui/act-anchor": { "debug": true, "group": "tm", "ignorePackageNameInUri": true, "path": "/script/mui/act-anchor/4.0.2/", "version": "4.0.2" }, "mui/act-style": { "debug": true, "group": "tm", "ignorePackageNameInUri": true, "path": "/script/mui/act-style/4.0.2/", "version": "4.0.2", "name": "mui/act-style", "base": "/script/mui/act-style/4.0.2/" }, "mui/hybrid": { "debug": true, "group": "tm", "ignorePackageNameInUri": true, "path": "/script/mui/hybrid/4.0.43/", "version": "4.0.43" }, "mui/iscroll-lite": { "debug": true, "group": "tm", "ignorePackageNameInUri": true, "path": "/script/mui/iscroll-lite/4.0.1/", "version": "4.0.1" }, "mui/scrollspy": { "debug": true, "group": "tm", "ignorePackageNameInUri": true, "path": "/script/mui/scrollspy/4.1.24/", "version": "4.1.24" }, "mui/tengine-detector": { "debug": true, "group": "tm", "ignorePackageNameInUri": true, "path": "/script/mui/tengine-detector/4.0.1/", "version": "4.0.1" }, "mui/zebra-rightnav": { "debug": true, "group": "tm", "ignorePackageNameInUri": true, "path": "/script/mui/zebra-rightnav/4.0.96/", "version": "4.0.96", "name": "mui/zebra-rightnav", "base": "/script/mui/zebra-rightnav/4.0.96/" }, "mui/custom-event": { "debug": true, "group": "tm", "ignorePackageNameInUri": true, "path": "/script/mui/custom-event/4.0.3/", "version": "4.0.3", "name": "mui/custom-event", "base": "/script/mui/custom-event/4.0.3/" }, "mui/feloader": { "debug": true, "group": "tm", "ignorePackageNameInUri": true, "path": "/script/mui/feloader/4.0.28/", "version": "4.0.28", "name": "mui/feloader", "base": "/script/mui/feloader/4.0.28/" }, "mui/mtb-windvane": { "debug": true, "group": "tm", "ignorePackageNameInUri": true, "path": "/script/mui/mtb-windvane/4.0.0/", "version": "4.0.0" }, "mui/mtop": { "debug": true, "group": "tm", "ignorePackageNameInUri": true, "path": "/script/mui/mtop/4.0.18/", "version": "4.0.18" }, "mui/popbox": { "debug": true, "group": "tm", "ignorePackageNameInUri": true, "path": "/script/mui/popbox/4.0.6/", "version": "4.0.6" }, "mui/tmall-coupon": { "debug": true, "group": "tm", "ignorePackageNameInUri": true, "path": "/script/mui/tmall-coupon/4.0.15/", "version": "4.0.15" }, "mui/tmall-dynamic": { "debug": true, "group": "tm", "ignorePackageNameInUri": true, "path": "/script/mui/tmall-dynamic/4.0.58/", "version": "4.0.58" }, "mui/zebra-act-item-240x240": { "debug": true, "group": "tm", "ignorePackageNameInUri": true, "path": "/script/mui/zebra-act-item-240x240/4.1.8/", "version": "4.1.8" }, "mui/zebra-act-item-template": { "debug": true, "group": "tm", "ignorePackageNameInUri": true, "path": "/script/mui/zebra-act-item-template/4.0.28/", "version": "4.0.28", "name": "mui/zebra-act-item-template", "base": "/script/mui/zebra-act-item-template/4.0.28/" }, "mui/zebra-dynamic": { "debug": true, "group": "tm", "ignorePackageNameInUri": true, "path": "/script/mui/zebra-dynamic/4.1.23/", "version": "4.1.23" }, "mui/zebra-act-item-190x190": { "debug": true, "group": "tm", "ignorePackageNameInUri": true, "path": "/script/mui/zebra-act-item-190x190/4.1.10/", "version": "4.1.10" }, "mui/particle": { "debug": true, "group": "tm", "ignorePackageNameInUri": true, "path": "/script/mui/particle/4.0.0/", "version": "4.0.0" }, "mui/zebra-particle": { "debug": true, "group": "tm", "ignorePackageNameInUri": true, "path": "/script/mui/zebra-particle/4.0.0/", "version": "4.0.0", "name": "mui/zebra-particle", "base": "/script/mui/zebra-particle/4.0.0/" }, "mui/common": { "debug": true, "group": "tm", "ignorePackageNameInUri": true, "path": "/script/mui/common/4.0.45/", "version": "4.0.45", "name": "mui/common", "base": "/script/mui/common/4.0.45/" }, "mui/kissy": { "debug": true, "group": "tm", "ignorePackageNameInUri": true, "path": "/script/mui/kissy/4.0.10/", "version": "4.0.10", "name": "mui/kissy", "base": "/script/mui/kissy/4.0.10/" }, "mui/zebra-loader": { "ignorePackageNameInUri": true, "path": "/script/mui/zebra-loader/4.1.1/", "version": "4.1.1", "group": "tm", "debug": true, "name": "mui/zebra-loader", "base": "/script/mui/zebra-loader/4.1.1/" }, "mui/common-seed": { "path": "/script/mui/common-seed/4.0.6/", "version": "4.0.6", "name": "mui/common-seed", "base": "/script/mui/common-seed/4.0.6/" }, "mui/global-nav": { "debug": true, "group": "tm", "ignorePackageNameInUri": true, "path": "/script/mui/global-nav/4.0.1/", "version": "4.0.1" } }, "modules": { "mui/countdown/index": { "requires": ["mui/zepto/zepto"] }, "mui/countdown/index.xtpl": { "requires": ["mui/xtemplate/index"] }, "mui/fetch/fetch": { "requires": ["mui/babel-polyfill/index"] }, "mui/fetch/iframePostForm": { "requires": ["mui/zepto/zepto"] }, "mui/fetch/jsonp": { "requires": ["mui/fetch/fetch", "mui/fetch/tool"] }, "mui/zebra-act-headbanner4/bulletScreen": { "requires": ["mui/zepto/zepto"] }, "mui/zebra-act-headbanner4/index": { "requires": ["mui/kissy-polyfill/index", "mui/zepto/zepto", "mui/fetch/jsonp", "mui/countdown/index", "./bulletScreen"] }, "mui/zebra-act-headbanner4/index-pc": { "requires": ["mui/kissy-polyfill/index"] }, "mui/zebra-fans-card/index": { "requires": ["mui/kissy-polyfill/index", "mui/zepto/zepto", "mui/fetch/jsonp"] }, "mui/zebra-fans-card/index-pc": { "requires": ["mui/kissy-polyfill/index", "mui/zepto/zepto", "mui/fetch/jsonp"] }, "mui/crossimage/index": { "requires": ["mui/babel-polyfill/index"] }, "mui/zebra-act-imgnav4-990x40/index": { "requires": ["mui/kissy-polyfill/index", "mui/datalazyload/index", "mui/crossimage/index"] }, "mui/zebra-act-imgnav4-990x40/index-pc": { "requires": ["mui/kissy-polyfill/index", "mui/datalazyload/index", "mui/crossimage/index"] }, "mui/zebra-macro/index": { "requires": ["mui/kissy-polyfill/index", "mui/datalazyload/", "mui/zepto/zepto", "mui/crossimage/index"] }, "mui/zebra-macro/index-pc": { "requires": ["mui/kissy-polyfill/index", "mui/zepto/zepto", "mui/datalazyload/", "mui/crossimage/"] }, "mui/act-anchor/index": { "requires": ["mui/babel-polyfill/index", "mui/zepto/zepto", "mui/zepto/event", "mui/zepto/fx"] }, "mui/scrollspy/header": { "requires": ["mui/iscroll-lite/index", "mui/zepto/event", "mui/zepto/fx", "mui/zepto/zepto", "mui/tengine-detector/index", "mui/hybrid/index", "./header.css"] }, "mui/scrollspy/index": { "requires": ["mui/babel-polyfill/index", "mui/kissy-polyfill/index", "mui/iscroll-lite/index", "mui/zepto/touch", "mui/zepto/event"] }, "mui/tengine-detector/index": { "requires": ["mui/babel-polyfill/"] }, "mui/tengine-detector/index.xtpl": { "requires": ["mui/xtemplate/runtime"] }, "mui/zebra-rightnav/dataReport": { "requires": ["mui/kissy-polyfill/"] }, "mui/zebra-rightnav/index": { "requires": ["mui/kissy-polyfill/", "mui/scrollspy/index", "mui/zepto/zepto"] }, "mui/zebra-rightnav/index-pc": { "requires": ["mui/kissy-polyfill/", "mui/zepto/zepto", "mui/zepto/event", "mui/act-anchor/index", "mui/datalazyload/index", "mui/zebra-rightnav/dataReport"] }, "mui/zebra-act-item-240x240/index": { "requires": ["mui/zebra-act-item-template/index"] }, "mui/zebra-act-item-240x240/index-pc": { "requires": ["mui/zebra-act-item-template/index-pc"] }, "mui/datalazyload/index": { "requires": ["mui/zepto/zepto", "mui/zepto/event"] }, "mui/mtb-windvane/index.xtpl": { "requires": ["mui/xtemplate/runtime"] }, "mui/mtop/index": { "requires": ["mui/mtb-windvane/", "mui/babel-polyfill/"] }, "mui/popbox/index": { "requires": ["mui/custom-event/index", "mui/zepto/event", "mui/popbox/index.css", "mui/babel-polyfill/"] }, "mui/popbox/index-pc": { "requires": ["mui/custom-event/index", "mui/zepto/event", "mui/popbox/index-pc.css", "mui/babel-polyfill/"] }, "mui/tmall-coupon/config": { "requires": ["mui/kissy-polyfill/index"] }, "mui/tmall-coupon/index": { "requires": ["mui/kissy-polyfill/index", "mui/babel-polyfill/index", "mui/zepto/event", "mui/zepto/zepto", "mui/mtop/index", "mui/tmall-coupon/config", "mui/tmall-coupon/util"] }, "mui/tmall-coupon/index-pc": { "requires": ["mui/kissy-polyfill/index", "mui/babel-polyfill/index", "mui/zepto/event", "mui/zepto/zepto", "mui/fetch/jsonp", "mui/tmall-coupon/config", "mui/tmall-coupon/util"] }, "mui/tmall-coupon/index-pc.xtpl": { "requires": ["mui/xtemplate/runtime"] }, "mui/tmall-coupon/index.xtpl": { "requires": ["mui/xtemplate/runtime"] }, "mui/tmall-coupon/util": { "requires": ["mui/kissy-polyfill/index", "mui/babel-polyfill/index", "mui/fetch/tool"] }, "mui/tmall-dynamic/index": { "requires": ["mui/zepto/zepto", "mui/zebra-dynamic/index", "mui/crossimage/index", "mui/xtemplate/index", "mui/datalazyload/index", "mui/fetch/jsonp"] }, "mui/zebra-act-item-190x190/index": { "requires": ["mui/zebra-act-item-template/index"] }, "mui/zebra-act-item-190x190/index-pc": { "requires": ["mui/zebra-act-item-template/index-pc"] }, "mui/zebra-act-item-template/index": { "requires": ["mui/kissy-polyfill/index", "mui/babel-polyfill/index", "mui/tmall-coupon/index", "mui/zepto/zepto", "mui/tmall-dynamic/index", "mui/zebra-act-imgnav4-990x40/index"] }, "mui/zebra-act-item-template/index-m1.xtpl": { "requires": ["mui/xtemplate/runtime", "mui://zebra-act-imgnav4-990x40/index.xtpl"] }, "mui/zebra-act-item-template/index-m2.xtpl": { "requires": ["mui/xtemplate/runtime", "mui://zebra-act-imgnav4-990x40/index.xtpl"] }, "mui/zebra-act-item-template/index-m3.xtpl": { "requires": ["mui/xtemplate/runtime", "mui://zebra-act-imgnav4-990x40/index.xtpl"] }, "mui/zebra-act-item-template/index-pc": { "requires": ["mui/kissy-polyfill/index", "mui/babel-polyfill/index", "mui/tmall-coupon/index-pc", "mui/tmall-dynamic/index", "mui/zebra-act-imgnav4-990x40/index-pc"] }, "mui/zebra-act-item-template/index-pc2.xtpl": { "requires": ["mui/xtemplate/runtime", "mui://zebra-act-imgnav4-990x40/index-pc.xtpl"] }, "mui/zebra-act-item-template/index-pc3.xtpl": { "requires": ["mui/xtemplate/runtime", "mui://zebra-act-imgnav4-990x40/index-pc.xtpl"] }, "mui/zebra-act-item-template/index-pc4.xtpl": { "requires": ["mui/xtemplate/runtime", "mui://zebra-act-imgnav4-990x40/index-pc.xtpl"] }, "mui/zebra-act-item-template/index-pc5.xtpl": { "requires": ["mui/xtemplate/runtime", "mui://zebra-act-imgnav4-990x40/index-pc.xtpl"] }, "mui/zebra-act-item-template/index.xtpl": { "requires": ["mui/xtemplate/runtime"] }, "mui/zebra-dynamic/ald-bottom": { "requires": ["mui/zebra-dynamic/io"] }, "mui/zebra-dynamic/channel": { "requires": ["mui/zepto/touch", "mui/zebra-dynamic/request"] }, "mui/zebra-dynamic/detector": { "requires": ["mui/hybrid/index"] }, "mui/zebra-dynamic/index": { "requires": ["mui/zepto/touch", "mui/zebra-dynamic/request"] }, "mui/zebra-dynamic/io": { "requires": ["mui/mtop/index", "mui/zepto/zepto"] }, "mui/zebra-dynamic/request": { "requires": ["mui/zebra-dynamic/io", "mui/zepto/touch", "mui/zebra-dynamic/ald-bottom", "mui/fetch/tool"] }, "mui/particle/index.xtpl": { "requires": ["mui/xtemplate/index"] }, "mui/xtemplate/index": { "requires": ["./runtime"] }, "mui/zebra-particle/index": { "requires": ["mui/kissy-polyfill/index", "mui/zepto/zepto", "mui/particle/index"] }, "mui/zebra-particle/index-pc": { "requires": ["mui/kissy-polyfill/index", "mui/zepto/zepto", "mui/particle/index"] }, "mui/zepto/event": { "requires": ["mui/zepto/zepto"] }, "mui/zepto/form": { "requires": ["mui/zepto/zepto"] }, "mui/zepto/fx": { "requires": ["mui/zepto/zepto"] }, "mui/zepto/fx_methods": { "requires": ["mui/zepto/zepto", "mui/zepto/fx"] }, "mui/zepto/gesture": { "requires": ["mui/zepto/zepto"] }, "mui/zepto/ie": { "requires": ["mui/zepto/zepto"] }, "mui/zepto/selector": { "requires": ["mui/zepto/zepto"] }, "mui/zepto/stack": { "requires": ["mui/zepto/zepto"] }, "mui/zepto/touch": { "requires": ["mui/zepto/zepto", "mui/zepto/event"] }, "mui/common/index": { "requires": ["mui/common/js/tm", "mui/common/js/tool", "mui/common/js/plugin", "mui/babel-polyfill/index"] }, "mui/common/index-pc": { "requires": ["mui/common/js/tool", "mui/common/js/event", "mui/common/js/tm", "mui/babel-polyfill/index"] }, "mui/common/js/plugin": { "requires": ["mui/common/js/event", "mui/common/js/tool", "mui/common/js/tm"] }, "mui/common/js/plugin-pc": { "requires": ["mui/common/js/event", "mui/common/js/tool"] }, "mui/common/js/site-nav": { "requires": ["mui/common/js/tool", "mui/common/js/event"] }, "mui/common/js/tm": { "requires": ["mui/custom-event/index"] }, "mui/common/js/tool": { "requires": ["mui/common/js/event", "mui/common/js/tm"] }, "mui/global-nav/index": { "requires": ["mui/global-nav/index.css", "mui/zepto/touch"] } }, "warnings": ["mui/zebra-loader versions not compat or invalid: 4.1.1|3.0.12"], "combine": true };</script>
+<script src="/script/mui/feloader/4.0.28/feloader-min.js"></script>
+<script src="/script/mui/kissy/4.0.10/seed-min.js"></script>
+<script src="/script/mui/common-seed/4.0.6/seed.js"></script>
+<script src="/script/mui/common/4.0.45/js/mod-config.js"></script>
+<script src="/script/mui/babel-polyfill/6.2.4/index.js"></script>
+<script src="/script/mui/custom-event/4.0.3/index.js"></script>
+<script src="/script/mui/common/4.0.45/js/tm.js"></script>
+<script src="/script/mui/common/4.0.45/js/event.js"></script>
+<script src="/script/mui/common/4.0.45/js/tool.js"></script>
+<script src="/script/mui/common/4.0.45/js/site-nav.js"></script>
+<script src="/script/mui/common/4.0.45/js/plugin-pc.js"></script>
+<script src="/script/mui/common/4.0.45/index-pc.js"></script>
+<script src="/script/mui/kissy-polyfill/4.0.12/index.js"></script>
+<script src="/script/mui/zebra-loader/4.1.1/index.js"></script>
+
+<script src="/script/mui/zebra-particle/4.0.0/index-pc.js"></script>
+<script src="/script/mui/zepto/4.0.7/zepto.js"></script>
+<script src="/script/mui/particle/4.0.0/index.js"></script>
+
+</body>
+</html>
